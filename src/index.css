@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #e2edf8;
+  color: #222;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+button, input, textarea {
+  font-family: inherit;
+}
+
+/* NAVBAR */
+.navbar {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  background: #00307d;
+  color: #fff;
+  padding: 0 30px;
+  height: 70px;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+}
+.navbar-left img {
+  height: 60px;
+}
+
+.navbar-center {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.navbar-center a {
+  color: #fff;
+  font-weight: 500;
+  font-size: 17px;
+  transition: color 0.2s;
+}
+.navbar-center a:hover {
+  color: #aee6e6;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 0 0 auto;
+}
+.navbar-right a,
+.navbar-right button {
+  background-color: #aee6e6;
+  color: #00307d;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 16px;
+  margin-left: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+.navbar-right a:hover,
+.navbar-right button:hover {
+  background: #fff;
+  color: #00307d;
+}
+
+/* FORM CENTERING */
+.form-center-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  width: 100vw;
+}
+
+form {
+  background-color: #f2f2f2;
+  padding: 35px 35px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(2,3,40,0.12);
+  width: 350px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form h1 {
+  text-align: center;
+  color: #00307d;
+  margin-bottom: 16px;
+}
+
+form label {
+  font-weight: bold;
+}
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+  padding: 9px 12px;
+  border-radius: 5px;
+  border: 1px solid #c4c4c4;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+form button {
+  background-color: #240cbb;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+form button:disabled {
+  background-color: #7c84a6;
+  cursor: not-allowed;
+}
