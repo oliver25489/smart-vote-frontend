@@ -54,6 +54,7 @@ function CreateElection() {
 
       if (res.status === 201) {
         alert('Election created successfully!');
+         navigate("/admin/dashboard");
         setForm({ title: '', description: '', start_time: '', end_time: '' });
       } else {
         alert(result.message || result.msg || 'Failed to create election.');

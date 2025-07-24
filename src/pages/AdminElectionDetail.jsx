@@ -52,8 +52,6 @@ export default function AdminElectionDetail() {
       <p style={styles.status}>Status: <strong>{election.status}</strong></p>
 
       <div style={styles.buttonGroup}>
-        <button style={styles.btnPrimary} onClick={() => navigate(`/admin/elections/${id}/edit`)}>✏️ Edit</button>
-        <button style={styles.btnDanger} onClick={() => alert("Delete logic here")}>🗑 Delete</button>
         <button style={styles.btnSuccess} onClick={makeElectionActive}>🚀 Make Active</button>
       </div>
 
